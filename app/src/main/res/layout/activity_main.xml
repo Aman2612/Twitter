@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="ecorp.twitter.MainActivity">
+
+<ImageView
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:src="@drawable/twitter"
+    android:layout_centerHorizontal="true"
+    android:layout_above="@+id/enterUserName"
+
+    />
+
+
+   <EditText
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/enterUserName"
+       android:lines="1"
+       android:layout_marginTop="30dp"
+       android:maxLength="20"
+       android:hint="Enter the UserName of the Account"
+       android:textColor="#fff"
+       android:textColorHint="#fff"
+       android:layout_above="@+id/loginButton"
+       android:layout_centerHorizontal="true"
+       />
+   <com.twitter.sdk.android.core.identity.TwitterLoginButton
+       android:layout_width="wrap_content"
+       android:layout_marginTop="30dp"
+       android:id="@+id/loginButton"
+       android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+       android:layout_centerVertical="true"
+       />
+
+
+
+</RelativeLayout>
